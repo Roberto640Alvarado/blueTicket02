@@ -46,6 +46,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public void updateActive(UUID id, ActiveDTO info) throws Exception {
 		// TODO Auto-generated method stub
+		//
 		Optional<User> userOptional = userRepository.findById(id);
 		if (userOptional.isPresent()) {
 			User user = userOptional.get();
