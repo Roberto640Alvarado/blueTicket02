@@ -24,7 +24,6 @@ public class JWTTokenFIlter extends OncePerRequestFilter {
 
 	@Autowired
 	JWTTools jwtTools;
-	
 	@Autowired
 	UserService userService;
 
@@ -68,5 +67,4 @@ public class JWTTokenFIlter extends OncePerRequestFilter {
 		filterChain.doFilter(request, response);
 
 	}
-
 }
